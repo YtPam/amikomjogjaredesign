@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="strict-origin" />
+    <meta name="viewport" content="width=device-width, initial-scle=1.0" />
+    <title>VISI & MISI</title>
+    <link
+      rel="icon"
+      href="https://d3ti.amikom.ac.id/assets/themes/tailwind03/images/favicon.png"
+      type="image/gif"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scrolltoTop d-none" id="scrolltoTop" onclick="backToTop()">
+      <i class="icon w-25 bx bx-up-arrow-alt fs-1"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg my-2">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end py-2"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center active-nav"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Profil<box-icon color="#FF7500" name="chevron-down"></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/pages/sejarah.html"
+                    >Sejarah</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-color"
+                    href="/pages/visimisi.html"
+                    >Nilai, Visi, Misi dan Tujuan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/sarana_prasarana.html">
+                    Sarana dan Prasarana</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Fakultas<box-icon
+                  color="#FF7500"
+                  name="chevron-down"
+                ></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ilmu Komputer</a>
+                  <ul class="dropdown-inside">
+                    <li>
+                      <a class="dropdown-item" href="prodi/d3mi.html"
+                        >D3 Manajemen Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/d3ti.html"
+                        >D3 Teknik Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/informatika.html"
+                        >Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/tekinf.html"
+                        >Teknologi Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/sisinf.html"
+                        >Sistem Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/tekkom.html"
+                        >Teknik Komputer</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ekonomi & Sosial</a>
+                  <ul class="dropdown-inside second">
+                    <li>
+                      <a class="dropdown-item" href="prodi/akuntansi.html"
+                        >Akuntansi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/ilkom.html"
+                        >Ilmu Komunikasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/ekonomi.html"
+                        >Ekonomi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/HI.html"
+                        >Hubungan Internasional</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/IP.html"
+                        >Ilmu Pemerintahan</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/kewirausahaan.html"
+                        >Kewirausahaan</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Sains & Teknologi</a>
+                  <ul class="dropdown-inside third">
+                    <li>
+                      <a class="dropdown-item" href="prodi/geografi.html"
+                        >Geografi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/arsitektur.html"
+                        >Arsitektur</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/wilayahkota.html"
+                        >Perencanaan Wilayah dan Kota
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="prodi/mti.html"
+                    >Pascasarjana MTI</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link mx-3" href="akademik.html">Akademik</a>
+            <a class="nav-link mx-3" href="beasiswa.html">Beasiswa</a>
+            <a class="nav-link mx-3" href="organisasi/organisasi.html"
+              >Organisasi</a
+            >
+            <a class="nav-link mx-3" href="awards.html">Awards</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main visimisi-img">
+      <h1>VISI MISI</h1>
+    </div>
+
+    <main class="container">
+      <section class="w-75">
+        <h1>A. NILAI-NILAI UNIVERSITAS AMIKOM YOGYAKARTA</h1>
+        <p>
+          Dalam melaksanakan kegiatan sivitas akademika dan tenaga kependidikan
+          wajib menjunjung tinggi dan mengamalkan nilai-nilai budaya sebagai
+          berikut:
+        </p>
+
+        <ul>
+          <li>
+            <strong> Caring culture </strong>
+            adalah budaya yang dibangun dengan dasar kepercayaan dan saling
+            mengasihi dengan pedoman hadist Nabi “Tidak beriman salah seorang
+            dari kamu sekalian, sehingga ia mencintai untuk saudaranya apa yang
+            ia cintai untuk dirinya” Intinya adalah seorang yang lainnya
+            bagaikan satu jiwa, jika dia mencintai saudaranya maka seakan-akan
+            dia mencintai dirinya sendiri dan harus menjauhkan diri dari
+            perbuatan hasad (dengki).
+          </li>
+          <li>
+            <strong> Learning culture </strong>
+            adalah budaya yang dibangun berdasarkan hasrat untuk menjelajahi dan
+            mempelajari ilmu pengetahuan dan teknologi dengan penuh daya kreasi
+            dan inovasi. “Allah akan meninggikan orang-orang yang beriman di
+            antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa
+            derajat dan Allah Maha mengetahui apa yang kamu kerjakan”.
+          </li>
+          <li>
+            <strong> Purposing culture </strong>
+            adalah budaya yang dibangun berdasarkan pada tujuan hidup yang
+            mulia, berkarya dan berprestasi yang paripurna bukan untuk
+            memperoleh materi sema ta tetapi dilakukan karena bentuk kecintaanya
+            kepada Tuhan. Tujuan hidup manuisa meliputi tigal hal yaitu :
+            menyembah kepada Allah (beriman), memanfaatkan alam semesta
+            (beramal) dan membentuk sejarah dan peradaban (berilmu).
+          </li>
+          <li>
+            <strong> Enjoyment culture </strong>
+            adalah budaya yang dibangun berdasarkan keinginan untuk
+            membahagiakan orang lain, menciptakan suasana yang membahagiakan dan
+            menyenangkan.
+          </li>
+        </ul>
+      </section>
+      <section class="w-75">
+        <h2>B. VISI</h2>
+        <p>
+          Visi Universitas Amikom Yogyakarta adalah menjadi perguruan tinggi
+          unggulan dunia dalam bidang ekonomi kreatif yang berbasis
+          kewirausahaan yang menebar kebajikan
+        </p>
+        <p>
+          erguruan tinggi unggulan dunia merupakan perguruan tinggi yang masuk
+          daftar 750 perguruan tinggi yang dikeluarkan oleh QS Ranking pada 2025
+          dan Perguruan tinggi unggulan dunia merupakan perguruan tinggi yang
+          masuk daftar 500 perguruan tinggi yang dikeluarkan oleh QS Ranking
+          pada 2030.
+        </p>
+      </section>
+      <section class="w-75">
+        <h2>B. MISI</h2>
+        <p>Universitas Amikom Yogyakarta memiliki misi :</p>
+        <ul>
+          <li>
+            Menyelenggarakan pendidikan tinggi kelas dunia di bidang
+            <strong> ekonomi kreatif</strong> berbasis kewirausahaan.
+          </li>
+          <li>
+            Melaksanakan penelitian dalam bidang
+            <strong>ekonomi kreatif berkualitas dunia</strong> yang dapat
+            berperan meningkatkan daya saing nasional.
+          </li>
+          <li>
+            Menyelenggarakan layanan pengabdian kepada masyarakat secara
+            profesional dalam rangka ikut memecahkan persoalan dunia maupun
+            nasional, terutama dalam bidang ekonomi kreatif.
+          </li>
+          <li>
+            Menyelenggarakan pendidikan berstandar global melalui kemitraan dan
+            jejaring nasional, regional maupun global.
+          </li>
+          <li>
+            Mengembangkan pusat ekonomi kreatif dan pusat kewirausahaan yang
+            bermanfaat baik nasional, regional maupun global.
+          </li>
+        </ul>
+      </section>
+      <section class="w-75">
+        <h2>C. TUJUAN</h2>
+        <p>Universitas Amikom Yogyakarta memiliki Tujuan :</p>
+        <ul>
+          <li>
+            Menghasilkan lulusan yang berkualitas global, berjiwa entrepreneur
+            dan profesional dalam disiplin ilmu ekonomi kreatif.
+          </li>
+          <li>
+            Menghasilkan penelitian dan produk ekonomi kreatif, berkualitas
+            global yang dapat berperan meningkatkan daya saing nasional.
+          </li>
+          <li>
+            Menghasilkan layanan pengabdian kepada masyarakat yang profesional
+            dalam rangka ikut memecahkan persoalan global maupun nasional,
+            terutama dalam bidang ekonomi kreatif.
+          </li>
+          <li>
+            Menghasilkan pendidikan berstandar global melalui kemitraan dan
+            jejaring nasional, regional maupun global.
+          </li>
+          <li>
+            Menghasilkan taman ekonomi kreatif (serupa taman pengetahuan dan
+            teknologi yang menkhususkan diri dalam ekonomi kreatif) global dan
+            pusat kewirausahaan yang bermanfaat baik nasional, regional maupun
+            global.
+          </li>
+        </ul>
+      </section>
+      <section class="w-75">
+        <h2>D. Sasaran Universitas Amikom Yogyakarta 5 tahun ke depan</h2>
+        <p>Universitas Amikom Yogyakarta memiliki Sasaran :</p>
+        <ul>
+          <li>
+            Terwujudnya lulusan yang berkualitas global, berjiwa entrepreneur
+            dan profesional dalam disiplin ilmu ekonomi kreatif. 80 % mendapat
+            pekerjaan dalam waktu paling lama 3 bulan dan 30% menjadi
+            entrepreneur.
+          </li>
+          <li>
+            Terwujudnya penelitian dan produk ekonomi kreatif berkualitas global
+            yang dapat berperan meningkatkan daya saing nasional yang memberikan
+            20-35% dari pendapatan perguruan tinggi.
+          </li>
+          <li>
+            Terwujudnya layanan pengabdian kepada masyarakat secara profesional
+            dalam rangka ikut memecahkan persoalan global maupun nasional,
+            terutama dalam bidang ekonomi kreatif yang memberikan sumbangan
+            6-15% dari pendapatan perguruan tinggi.
+          </li>
+          <li>
+            Terwujudnya 10% dari mahasiswa tingkat sarjana dan magister sebagai
+            mahasiswa program internasional serta terwujudnya 50 kemitraan dan
+            jejaring global.
+          </li>
+          <li>Berkontribusi terwujudnya Universitas Top 100 Asia Tenggara.</li>
+          <li>
+            Berkontribusi terwujudnya Taman Ekonomi Kreatif dan Pusat
+            Kewirausahaan di Asia Tenggara.
+          </li>
+        </ul>
+      </section>
+      <section class="w-75 my-5">
+        <div>
+          <h2>E. Motto</h2>
+          <h1>“Creative Economy Park”</h1>
+          <p>
+            Amikom Creative Economy Park (ACEP) yang telah bekerjasama dennen
+            perusahaan di Silicon Valley dan Hollywood menjadika peluang baru
+            bagi mahasiswa untuk melakukan internship dan bagi alumni untuk
+            bekerja di Silicon Valley dan Hollywood.
+          </p>
+        </div>
+        <h2>F. RENCANA JANGKA PANJANG</h2>
+        <p>
+          RPJP Universitas Amikom Yogyakarta adalah dokumen rencana pembangunan
+          jangka panjang Universitas Amikom Yogyakarta periode 2020-2040 yang
+          memuat serangkaian pernyataan kehendak Warga Universitas Amikom
+          Yogyakarta, yang disusun oleh Tim yang dibentuk oleh Rektor yang
+          beranggotakan Rektor, Wakil-wakil Rektor, Senat Universitas (SU).
+          Dokumen RPJP Universitas Amikom Yogyakarta menjadi panduan penyusunan
+          Rencana Pengembangan Jangka Menengah Universitas Amikom Yogyakarta
+          (RPJM AMIKOM), yang merupakan prioritas program dan kegiatan Rektor
+          dalam mengelola Universitas Amikom Yogyakarta selama periode lima
+          tahun yang dituangkan dalam Renstra.
+        </p>
+        <p>
+          RPJP Universitas Amikom Yogyakarta ditetapkan dengan maksud untuk
+          memberikan arah sekaligus menjadi acuan seluruh Warga Universitas
+          Amikom Yogyakarta dalam mewujudkan visi dan misi Universitas Amikom
+          Yogyakartamelalui penyelenggaraan Tridharma Perguruan Tinggi yang
+          unggul. RPJP Universitas Amikom Yogyakarta yang diproyeksikan untuk
+          jangka waktu 20 tahun dibagi menjadi empat tahap. Setiap tahap
+          berlangsung selama lima tahun dengan sasaran strategis masing- masing
+          yang terus meningkat pada setiap tahapnya. Tahapan dan sasaran
+          strategis tersebut adalah sebagai berikut:
+        </p>
+
+        <p>
+          <strong>Tahap I (2021-2025)</strong>Universitas Amikom Yogyakarta
+          mengkonsolidasikan semua potensi yang dimilikinya dalam
+          menyelenggarakan Tridharma Perguruan Tinggi, sehingga Universitas
+          Amikom Yogyakarta menjadi perguruan tinggi unggulan dunia (Top 500 QS
+          Ranking) dan <strong> Taman Ekonomi Kreatif </strong>(Creative Economy
+          Park) Unggulan Asia serta menjadi<strong>
+            Universitas Generasi Keempat</strong
+          >
+          Unggulan Asia pada 2030.
+        </p>
+        <p>
+          <strong>Tahap II (2026-2030)</strong> Universitas Amikom Yogyakarta
+          mengkonsolidasikan semua potensi yang dimilikinya dalam
+          menyelenggarakan Tridharma Perguruan Tinggi, sehingga Universitas
+          Amikom Yogyakarta menjadi perguruan tinggi unggulan Asia Tenggara (Top
+          500 QS Ranking) dan <strong> Taman Ekonomi Kreatif </strong> (Creative
+          Economy Park) Unggulan Asia Tenggara, serta menjadi
+          <strong> Universitas Generasi Keempat</strong> Unggulan Asia Tenggara
+          pada 2030.
+        </p>
+        <p>
+          <strong>Tahap III (2031-2035)</strong> Universitas Amikom Yogyakarta
+          mengkonsolidasikan semua potensi yang dimilikinya dalam
+          menyelenggarakan Tridharma Perguruan Tinggi, sehingga Universitas
+          Amikom Yogyakarta menjadi perguruan tinggi unggulan Asia Tenggara (Top
+          250 QS Ranking) dan
+          <strong>
+            Taman Ekonomi Kreatif (Creative Economy Park) Unggulan Dunia </strong
+          >, serta menjadi
+          <strong> Universitas Generasi Keempat Dunia</strong> Unggulan Asia
+          Tenggara pada 2035.
+        </p>
+        <p>
+          <strong>Tahap IV (2036-2040)</strong> Universitas Amikom Yogyakarta
+          mengkonsolidasikan semua potensi yang dimilikinya dalam
+          menyelenggarakan Tridharma Perguruan Tinggi, sehingga Universitas
+          Amikom Yogyakarta menjadi perguruan tinggi unggulan dunia (top 100 QS
+          Star) dan
+          <strong>
+            Taman Ekonomi Kreatif (Creative Economy Park) Unggulan Dunia
+          </strong>
+          serta serta menjadi
+          <strong> Universitas Generasi Keempat Top Dunia</strong> pada 2040.
+        </p>
+      </section>
+    </main>
+    <footer class="template pb-0">
+      <div class="container-lg">
+        <a href="/index.html"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid w-25 img-footer mb-4"
+            alt=""
+        /></a>
+        <div
+          class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mx-auto justify-content-lg-between"
+        >
+          <div class="col">
+            <ul class="fw-light text-light">
+              <p>
+                Alamat Kampus : JL .Ring Road Utara,<br />
+                Condong Catur, Sleman, Yogyakarta
+              </p>
+              <li>Telp: (0274) 884201 - 207</li>
+              <li>Fax: (0274) 884208</li>
+              <li>Kodepos: 55283</li>
+
+              <li>
+                Email:
+                <a href="mailto:Amikom@amikom.ac.id">Amikom@amikom.ac.id</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="fw-light text-light">
+              <li><a href="pmb.html">Pendaftaran</a></li>
+              <li><a href="sejarah.html">Profil Amikom</a></li>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="info-kampus.html">Info Kampus</a></li>
+              <li><a href="info-pmb.html#biaya">Biaya</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul class="fw-light text-light list-group">
+              <li><a href="akademik.html">Akademik</a></li>
+              <li><a href="beasiswa.html">Beasiswa</a></li>
+              <li><a href="news.html">Berita</a></li>
+              <li><a href="creativeEko.html">Ekonomi Kreatif</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul
+          class="d-flex justify-content-lg-end gap-4 mt-5 justify-content-center"
+        >
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                ></path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text text-center mt-5 mb-0 py-4 fw-light">
+        Copyright ©2022 UNIVERSITAS AMIKOM YOGYAKARTA
+        <br />
+        All Right Reserved
+      </p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

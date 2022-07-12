@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="strict-origin" />
+    <meta name="viewport" content="width=device-width, initial-scle=1.0" />
+    <title>ORGANISASI</title>
+    <link
+      rel="icon"
+      href="https://d3ti.amikom.ac.id/assets/themes/tailwind03/images/favicon.png"
+      type="image/gif"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scrolltoTop d-none" id="scrolltoTop" onclick="backToTop()">
+      <i class="icon w-25 bx bx-up-arrow-alt fs-1"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg my-2">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end py-2"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Profil<box-icon color="#FF7500" name="chevron-down"></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../sejarah.html">Sejarah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../visimisi.html"
+                    >Nilai, Visi, Misi dan Tujuan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../sarana_prasarana.html">
+                    Sarana dan Prasarana</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Fakultas<box-icon
+                  color="#FF7500"
+                  name="chevron-down"
+                ></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ilmu Komputer</a>
+                  <ul class="dropdown-inside">
+                    <li>
+                      <a class="dropdown-item" href="../prodi/d3mi.html"
+                        >D3 Manajemen Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/d3ti.html"
+                        >D3 Teknik Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/informatika.html"
+                        >Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/tekinf.html"
+                        >Teknologi Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/sisinf.html"
+                        >Sistem Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/tekkom.html"
+                        >Teknik Komputer</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ekonomi & Sosial</a>
+                  <ul class="dropdown-inside second">
+                    <li>
+                      <a class="dropdown-item" href="../prodi/akuntansi.html"
+                        >Akuntansi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/ilkom.html"
+                        >Ilmu Komunikasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/ekonomi.html"
+                        >Ekonomi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/HI.html"
+                        >Hubungan Internasional</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/IP.html"
+                        >Ilmu Pemerintahan</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../prodi/kewirausahaan.html"
+                        >Kewirausahaan</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Sains & Teknologi</a>
+                  <ul class="dropdown-inside third">
+                    <li>
+                      <a class="dropdown-item" href="../prodi/geografi.html"
+                        >Geografi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/arsitektur.html"
+                        >Arsitektur</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../prodi/wilayahkota.html"
+                        >Perencanaan Wilayah dan Kota
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mti.html">Pascasarjana MTI</a>
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link mx-3" href="../akademik.html">Akademik</a>
+            <a class="nav-link mx-3" href="../beasiswa.html">Beasiswa</a>
+            <a class="nav-link mx-3 active-nav" href="organisasi.html"
+              >Organisasi</a
+            >
+            <a class="nav-link mx-3" href="../awards.html">Awards</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <div class="main organisasi-img">
+        <h1>ORGANISASI</h1>
+      </div>
+    </div>
+
+    <main class="container responsive">
+      <div class="my-5 w-75">
+        <h3 class="my-5"><b>1. SENAT MAHASISWA (SEMA)</b></h3>
+        <p>
+          Senat Mahasiswa yang selanjutnya disingkat SEMA adalah organisasi
+          mahasiswa tertinggi dalam struktur LM Universitas AMIKOM Yogyakarta
+          yang berperan sebagai lembaga legislatif yang mengoordinasi BEM, HIMA
+          dan UKM. Senat Mahasiswa beranggotakan Senator Kelas yang terdiri dari
+          2 orang mahasiswa aktif dari masing-masing kelas. Senat Mahasiswa
+          berfungsi menampung aspirasi mahasiswa Universitas AMIKOM Yogyakarta.
+          Senat Mahasiswa berfungsi sebagai koordinator dari BEM, HIMA dan UKM.
+          Senat Mahasiswa memberikan instruksi pada BEM. Fungsi utama dari SEMA
+          sendiri adalah Controling, Legalitas, dan Budgeting. Yang dimaksud
+          dengan controling adalah SEMA berfungsi untuk mengontrol seluruh
+          kegiatan yang dilaksanakan oleh organisasi mahasiswa yang berada di
+          Universitas AMIKOM Yogyakarta. Sedangkan Legalitas, SEMA bertindak
+          sebagai badan legislatif yang melegalkan seluruh kegiatan organisasi
+          mahasiswa yang akan diadakan oleh organisasi tersebut sebelum
+          disetujui oleh wakil rektor 3 bidang kemahasiswaan dan alumni
+          Universitas AMIKOM Yogyakarta. Yang terakhir adalah Budgeting, SEMA
+          mempunyai fungsi untuk mengatur keuangan dari setiap organisasi
+          mahasiswa yang ada di Universitas AMIKOM Yogyakarta.
+        </p>
+        <section class="mx-auto w-60">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_SEMA.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>2. BADAN EKSEKUTIF MAHASISWA (BEM)</b></h3>
+        <p>
+          Badan Eksekutif Mahasiswa Universitas AMIKOM Yogyakarta disingkat BEM
+          Universitas AMIKOM Yogyakarta adalah organisasi mahasiswa pelaksana
+          amanat Mubes yang memiliki kekuasaan eksekutif tertinggi dalam LM
+          Universitas AMIKOM Yogyakarta dan berkedudukan dibawah SEMA serta
+          memiliki koordinasi dengan HIMA dan UKM. BEM Universitas AMIKOM
+          Yogyakarta membawahi dan membimbing Badan Semi Otonomi (BSO) dalam
+          garis instruksi untuk dapat berdiri menjadi UKM resmi didalam LM
+          Universitas AMIKOM Yogyakarta. BADAN EKSEKUTIF MAHASISWA Universitas
+          AMIKOM Yogyakarta yang selanjutnya di sebut BEM yang menjadi tonggak
+          eksekusi dalam menampung aspirasi mahasiswa yang solutif untuk
+          berkembangnya Universitas AMIKOM Yogyakarta dan Indonesia. Lahir pada
+          Mubes ke V tahun 1999 dengan mengalami fluktuasi kepengurusan dan
+          keorganisasian dalam masa silam tetapi, sekarang sudah mengalami
+          transormasi hal ini di buktikan dengan beberapa gerakan BEM
+          Universitas AMIKOM Yogyakarta diantaranya Mengadakan Kajian Isu Kampus
+          dan Nasional, Mengadakan Sekolah Mahasiswa Berkarakter yang disebut
+          Fighter School, Seminar Nasional, mempunyai Desa Binaan IT, aktif
+          bergerak dalam aliansi BEM seluruh Indonesia dan lain-lain.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Foto_BEM.jpeg"
+              alt=""
+              class="img-fluid w-75"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>3. HMIF</b></h3>
+        <p>
+          HMIF Universitas AMIKOM Yogyakarta adalah Himpunan Mahasiswa Program
+          Studi Informatika Universitas AMIKOM Yogyakarta. HMIF Universitas
+          AMIKOM adalah organisasi kemahasiswaan di dalam struktur kelembagaan
+          Universitas AMIKOM Yogyakarta di bawah pembinaan Program Studi
+          Informatika dan di bawah koordinasi Wakil Ketua III Universitas AMIKOM
+          Yogyakarta. HMIF Universitas AMIKOM berfungsi sebagai penyalur
+          aspirasi, informasi, pemberdaya dan pemersatu mahasiswa Program Studi
+          Informatika Universitas AMIKOM Yogyakarta
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_HMIF.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>4. HIMMSI</b></h3>
+        <p>
+          HIMMSI adalah Himpunan Mahasiswa Program Studi Manajemen Informatika
+          dan Sistem Informasi, dibentuk dengan tujuan untuk menyalurkan
+          aspirasi mahasiswa Program Studi Manajemen Informatika dan Sistem
+          Informasi di Universitas AMIKOM Yogyakarta. Lingkungan kampus terpadu
+          Universitas AMIKOM Yogyakarta sebagai kesekretariatan pusat HIMMSI
+          Universitas AMIKOM Yogyakarta menjadi tonggak mobilitas kegiatan
+          himpunan mahasiswa yang dibawahi langsung oleh pihak Program Studi
+          Manajemen Informatika dan Sistem Informasi. Pada tahun 2000 dengan
+          nama awal HIMMI, kemudian berganti nama menjadi HIMMSI pada tahun 2006
+          . Hingga kini, HIMMSI aktif melakukan kegiatan yang berguna bagi
+          mahasiswa, diantaranya dengan cara mengadakan acara internal maupun
+          eksternal kampus, contohnya Dialog Program Studi yang diadakan minimal
+          2 kali dalam satu periode kepengurusan, adanya pelatihan TA/Skripsi
+          dan kegiatan sosial bagi masyarakat.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_HIMMSI.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>5. HIMIP</b></h3>
+        <p>
+          HIMIP adalah satu-satunya organisasi yang berada dibawah prodi ilmu
+          pemerintahan Universitas AMIKOM Yogyakarta
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_HIMIP.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>6. KOMAHI</b></h3>
+        <p>
+          KOMAHI merupakan himpunan mahasiswa jurusan Hubungan Internasional
+          Universitas AMIOKM Yogyakarta yang di bentuk pada tanggal 20 Oktober
+          2017. Memiliki 6 divisi dalam menampung dan memfasilitasi mahasiswa
+          Hubungan Internasional baik dalam bidang akademis dan non-akademis.
+          Divisi tersebut terdiri dari Divisi Penelitian, Divisi Pengembangan
+          Wacana, Divisi Bahasa & Budaya, Divisi Minat & Bakat, Divisi Pers
+          Mahasiswa, Divisi Jaringan & Kerjasama.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_KOMAHI.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>7. HIMADITI</b></h3>
+        <p>
+          HIMADITI Universitas AMIKOM Yogyakarta adalah organisasi kemahasiswaan
+          di dalam struktur kelembagaan Universitas AMIKOM Yogyakarta di bawah
+          pembinaan Program Studi D3 Teknik Informatika dan di bawah kordinasi
+          Wakil Rektor III Bidang Kemahasiswaan dan Alumni Universitas AMIKOM
+          Yogyakarta. Berfungsi sebagai penyalur aspirasi, informasi, pemberdaya
+          dan pemersatu mahasiswa Program Studi D3 Teknik Informatika
+          Universitas AMIKOM Yogyakarta.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_HIMADITI.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>8. AMIKOM COMPUTER CLUB (AMCC)</b></h3>
+        <p>
+          AMIKOM COMPUTER CLUB atau AMCC Merupakan unit kegiatan mahasiswa di
+          bidang keilmuan, terbentuk pada tanggal 6 mei 1996. Pada awalnya
+          merupakan sebuah komunitas dari mahasiswa AMIKOM yang mempunyai hobi
+          yang sama di bidang komputer dan tempat rekan-rekan mahasiswa untuk
+          saling mencari ilmu dan mencari sebuah solusi jika mendapat
+          permasalahan dibidang komputer.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logi_AMCC.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>9. KOMUNITAS MULTIMEIDA AMIKOM (KOMA)</b></h3>
+        <p>
+          KOMA kepanjangan dari Komunitas Multimedia AMIKOM,merupakan sebuah
+          komunitas multimedia yang pada awalnya beranggotakan
+          mahasiswa-mahasiswa Universitas AMIKOM Yogyakarta yang mempunyai hobby
+          di bidang multimedia. KOMA diresmikan oleh lembaga menjadi salah satu
+          UKM (Unit Kerja Mahasiswa) di Universitas AMIKOM Yogyakarta yang
+          berada dalam struktur lembaga mahasiswa Universitas AMIKOM Yokyakarta
+          pada tanggal 27 Mei 2001. Dengan nomor Surat Keputusan Pembantu
+          Direktur III Universitas AMIKOM Yokyakarta : 003/SK/PUDIR.III/AMIKOM/
+          VI/2001. KOMA mempunyai 4 divisi:Graphic Design,Web Design,Broadcast
+          Movie,Visual Effect Animation.Divisi Graphic Design dipandu oleh Ayu
+          Candra Dewi selaku koordinator divisi Graphic Design.Anggota dapat
+          mempelajari penggunaan software Adobe Photoshop,Adobe Illutrator,Adbe
+          Design,dan Corel Draw.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_KOMA.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>10. AMIKOM ENGLISH CLUB (AEC)</b></h3>
+        <p>
+          AMIKOM English Club adalah bagian dari Unit Kegiatan Mahasiswa
+          Universitas AMIKOM Yogyakarta yang merupakan kumpulan mahasiswa yang
+          berminat meningkatkan kemampuannya dalam berbahasa Inggris. UKM AMIKOM
+          English Club Universitas AMIKOM Yogyakarta didirikan di Yogyakarta
+          pada tanggal 20 Januari 2001.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_AEC.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>11. AMIKOM MUSIC ORGANISATION (AMO)</b></h3>
+        <p>
+          AMIKOM Music Organisation adalah salah satu Unit Kegiatan Mahasiswa
+          AMIKOM yang berada di bidang Seni. UKM AMO sendiri awalnya adalah
+          sebuah BSO yang kemudian naik menjadi UKM pada tahun 2004. Pada tahun
+          2007 UKM AMO terbentuk menjadi 2 Divisi yaitu Divisi Music yang
+          bernama AMO MUSIC dan Divisi Event Oranizer (EO) yang bernama AMO
+          ENTERTAINT. UKM AMO juga tergabung dalam Forum Komunitas UKM MUSIK
+          se-Jogja (FK MUSIK JOGJA) yang juga diikuti oleh Universitas, Sekolah
+          Tinggi dan Akademi terkemuka di Jogjakarta.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_AMO.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>12. MANGGAR</b></h3>
+        <p>
+          Menyadari pesatnya perkembangan teknologi saat ini,manusia cenderung
+          mengejar kehidupan modern sehingga nilai-nilai kebudayaan di Indonesia
+          yang telah kita miliki sering terabaikan. UKM Teater “MANGGAR”
+          (Mahasiswa Ngudi Gandha Haruming Rasa) dapat memberikan keseimbangan
+          dalam kehidupan masyarakat Universitas “AMIKOM” Yogyakarta yang
+          berbasis teknologi informasi pada khususnya dan masyarakat luas pada
+          umumnya. Teater merupakan laboratorium kehidupan yang mengekpresikan
+          kehidupan sebenarnya di atas panggung ataupun disaat berproses. Maka
+          dengan penuh keyakinan kampus tercinta Universitas “AMIKOM” Yogyakarta
+          membutuhkan teater
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_MANGGAR.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>13. MAYAPALA</b></h3>
+        <p>
+          Mahasiswa AMIKOM Yogyakarta Pecinta Alam atau lebih dikenal dengan
+          sebutan MAYAPALA, adalah salah satu organisasi pecinta alam yang
+          merupakan bagian dari Unit Kegiatan Mahasiswa (UKM) yang bernaung di
+          Universitas AMIKOM Yogyakarta. MAYAPALA dibentuk pada hari minggu
+          tanggal 4 Desember 1994 pukul 10.00 WIB, di puncak Hargo Dalem gunung
+          Lawu. Pembentukan MAYAPALA sebagai UKM ditandai dengan penyematan
+          slayer anggota MAYAPALA. MAYAPALA sebagai wadah pengembangan minat dan
+          bakat yang bergerak dibidang kepecinta alaman menggunakan landasan
+          idiil berasaskan Pancasila dan Undang-Undang Dasar 1945 sebagai
+          landasan konstitusionalnya. MAYAPALA juga berlandasan operasional Tri
+          Dharma Perguruan Tinggi dan Kode Etik Pecinta Alam.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_MAYAPALA.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>14. TAEKWONDO</b></h3>
+        <p>
+          UKM taekwondo adalah salah satu lembaga mahasiswa Universitas AMIKOM
+          di bidang olah raga bela diri. UKM taekwondo didirikan pada tanggal 12
+          april 1998 di Yogyakarta oleh Zamna Rofiq Zakaria. UKM Taekwondo
+          Universitas AMIKOM telah banyak mengikuti berbagai ajang kopetisi baik
+          tingkat nasional maupun internasional, dan sampai saat ini hasilnya
+          cukup memuaskan. Ini berkat kerja keras para anggota UKM Taekwondo
+          khususnya para atlet, pelatih serta dukungan dari kampus. Untuk
+          mengetahui prestasi –prestasi yang di raih dari UKM taekwondo dapat di
+          lihat pada etalase kampus di gedung unit 2. Untuk saat ini beberapa
+          dari atlet Taekwondo AMIKOM direkrut dari beberapa KONI Kabupaten
+          diantaranya GunungKidul,Sleman,Kulon Progo dan kota Jogja. UKM
+          Taekwondo terus melatih atlet-atletnya agar bisa menjadi kebanggan
+          kampus serta selalu terbuka menerima anggota baik mahasiswa kampus
+          AMIKOM maupun dari luar. Hal ini berdasarkan dengan visi maupun misi
+          UKM Taekwondo Universitas AMIKOM Yogyakarta.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_TAEKWONDO.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>15. IKNA</b></h3>
+        <p>
+          IKNA adalah Organisasi Kerohanian Nasrani yang merupakan perkumpulan
+          dari Mahasiswa AMIKOM yang beragama Nasrani di kampus Universitas
+          AMIKOM Yogyakarta.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_IKNA.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>16. AMIKOM FOOTBALL CLUB (AFC)</b></h3>
+        <p>
+          AMIKOM FOOTBALL CLUB atau AFC adalah organisasi mahasiswa yang
+          bergerak di bidang minat dan bakat khususnya olahraga. AFC dibagi
+          menjadi dua divisi yaitu divisi sepakbola dan divisi futsal. AMIKOM
+          Football Club (AFC) sebagai sebuah wadah organisasi yang menampung
+          bakat-bakat alami maupun yang sekedar hobi ingin menumbuhkan dan juga
+          mengembangkan persepakbolaan di AMIKOM. Nantinya diharapkan dari
+          proses pembinaan AFC ini dapat dihasilkan bibit-bibit pemain yang
+          dapat berbicara dipentas Nasional maupun Internasional.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_AFC.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>17. PSHT</b></h3>
+        <p>
+          Pencak Silat PSHT Amikom adalah bso yang bergerak dalam bidang minat
+          bakat dengan mengutamakan rasa persaudaraan antara anggota organisasi.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_PSHT.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>18. AMIKOM STUDENT BADMINTON (ASBC)</b></h3>
+        <p>
+          ASBC merupakan Komunitas Bulutangkis Amikom. Latihan rutin ASBC
+          dilaksanakan setiap hari Sabtu dan Minggu. Di dalam tubuh yang sehat,
+          terdapat jiwa yang kuat, ayo berolahraga sehatkan Amikom, sehatkan
+          generasi muda, sehatkan Indonesia. ASBC sudah berkali-kali menang
+          dalam kejuaraan baik tingkat local maupun nasional.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_ASBC.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>19. AMIKOM BASKETBALL CLUB (ABBC)</b></h3>
+        <p>
+          Organisasi yang bergerak di bidang olahraga Basket yang menampung dan
+          mengajari tentang teknik bermain basket dengan baik.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_ABBC.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>20. HARDWARE EXPERIMENT AMIKOM (HEXA)</b></h3>
+        <p>
+          HARDWARE EXPERIMENT AMIKOM (HEXA) merupakan sebuah komunitas mahasiswa
+          yang memiliki ketertarikan di bidang Hardware. HEXA memiliki empat
+          divisi yaitu Divisi Keorganisasian, Divisi Kontes, Divisi Riset dan
+          Divisi Event Organizer. Adanya HEXA ini diharapkan dapat memberikan
+          wadah bagi mahasiswa khususnya yang mempunyai minat pada bidang
+          eksplorasi hardware.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_HEXA.png"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>21. GERAKAN ANTI NARKOBA AMIKOM (GANA)</b></h3>
+        <p>
+          GANA merupakan komunitas dibidang Anti Narkoba di Amikom. Sebagai
+          kampus yang berperan aktif dalam partisipasi dan bekerjasama untuk
+          mendukung kebijakan, program dan kegiatan yang dilakukan dalam upaya
+          pencegahan pemberantasan penyalahgunaan dan peredaran gelap narkoba,
+          psikotoprika, prekusor dan bahan adiktif lainnya.GANA akan terus
+          berupaya mempertahankan prestasi yang diraih dengan mengadakan
+          sosialisasi, kampanye dan aksi simpatik lainnya. Bahkan untuk
+          mendapatkan data yang akurat GANA telah merencanakan untuk mengadakan
+          penelitian tentang narkoba di lingkungan amikom.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_GANA.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>22. STAND UP COMEDY AMIKOM</b></h3>
+        <p>
+          Stand up Comedy Amikom adalah Komunitas yang memberi hiburan dan
+          informasi yang tanpa sadar membuat penonton bahagia. Komunitas ini
+          didirikan oleh alumni alumni AMIKOM terdahulu yang terlalu jenuh
+          dengan rutinitas sehari-hari kampus IT seperti Amikom. Dengan
+          keresahan dan materi yang sesuai untuk mahasiswa, pastinya kalian akan
+          terhibur.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_Stand_Up_Comedy.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>23. SHOUTUL MUHIBBIN</b></h3>
+        <p>
+          Shoutul Muhibbin merupakan komunitas sholawat yang berada di
+          lingkungan civitas Universitas AMIKOM Yogyakarta. Nama Shoutul
+          Muhibbin langsung diberikan oleh Habib Syech Bin Abdul Qadir Assegaf.
+          Harapannya Mahasiswa AMIKOM selain menjadi gudangnya Ilmu Teknologi
+          Informasi juga menjadi gudangnya para pecinta Rasulullah SAW. Kegiatan
+          Shoutul Muhibbin antara lain: Rutinan Sholawat Simtuddurror,
+          Pengembangan SDM (latihan mingguan), dan Peringatan Hari Besar Islam.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_Shoutul_Muhibbin.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>24. POTRAIT</b></h3>
+        <p>
+          POTRAIT Merupakan sebuah club/komunitas fotografi di Universitas
+          AMIKOM Yogyakarta. Di sini merupakan wadah bagi para penggemar
+          fotografi bagi mahasiswa, dosen dan karyawan Universitas AMIKOM
+          Yogyakarta untuk saling berbagi dan bertukar pikiran tentang dunia
+          fotografi. Kami tidak memandang dari segi alat yang digunakan, tapi
+          kami memandang dari segi bagaimana kita berkreatifitas bersama dan
+          saling berbagi.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Logo_Potrait.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+        <h3 class="my-5"><b>25. AMIKOM OVER CLOCK (AOC)</b></h3>
+        <p>
+          AMIKOM OVERCLOCK merupakan sebuah komunitas yang berisikan anggota
+          yang menyukai di bidang Overclocking khususnya Overclock PC. Overclock
+          merupakan sebuah kegiatan yang digunakan untuk menemukan hasil yang
+          maksimal dari sebuah PC. Amikom Overclock mempunyai tujuan untuk
+          memberikan prestasi sebanyak mungkin kepada Universitas AMIKOM. Bukan
+          hanya itu, Amikom Overclock juga bertujuan untuk bisa bekerja sama
+          dengan para vendor hardware PC. Amikom Overclock juga membuka jasa
+          Rendering bagi mahasiswa amikom yang ingin melakukan rendering. Amikom
+          Overclock memiliki ruangan sendiri yaitu di Lab Eksplorasi Universitas
+          AMIKOM Yogyakarta.
+        </p>
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <img
+              src="http://kemahasiswaan.amikom.ac.id/media/43/Foto_AOC.jpg"
+              alt=""
+              class="img-fluid w-50"
+            />
+          </div>
+        </section>
+        <br /><br />
+      </div>
+    </main>
+
+    <footer class="template pb-0">
+      <div class="container-lg">
+        <a href="/index.html"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid w-25 img-footer mb-4"
+            alt=""
+        /></a>
+        <div
+          class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mx-auto justify-content-lg-between"
+        >
+          <div class="col">
+            <ul class="fw-light text-light">
+              <p>
+                Alamat Kampus : JL .Ring Road Utara,<br />
+                Condong Catur, Sleman, Yogyakarta
+              </p>
+              <li>Telp: (0274) 884201 - 207</li>
+              <li>Fax: (0274) 884208</li>
+              <li>Kodepos: 55283</li>
+
+              <li>
+                Email:
+                <a href="mailto:Amikom@amikom.ac.id">Amikom@amikom.ac.id</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="fw-light text-light">
+              <li><a href="../pmb.html">Pendaftaran</a></li>
+              <li><a href="../sejarah.html">Profil Amikom</a></li>
+              <li><a href="../awards.html">Awards</a></li>
+              <li><a href="../info-kampus.html">Info Kampus</a></li>
+              <li><a href="../info-pmb.html#biaya">Biaya</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul class="fw-light text-light list-group">
+              <li><a href="../akademik.html">Akademik</a></li>
+              <li><a href="../beasiswa.html">Beasiswa</a></li>
+              <li><a href="../news.html">Berita</a></li>
+              <li><a href="../creativeEko.html">Ekonomi Kreatif</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul
+          class="d-flex justify-content-lg-end gap-4 mt-5 justify-content-center"
+        >
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                ></path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text text-center mt-5 mb-0 py-4 fw-light">
+        Copyright ©2022 UNIVERSITAS AMIKOM YOGYAKARTA
+        <br />
+        All Right Reserved
+      </p>
+    </footer>
+    <script src="../../js/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

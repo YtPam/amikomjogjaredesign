@@ -1,0 +1,580 @@
+:root{
+    --bg-color-fore: #4A1B9D;
+    --bg-drop-color: #501FA4;
+    --font-color: rgb(255, 255, 255);
+    --hover-color: #753ac882;
+    --decor-color: #FF7501;
+    --bg-color: #F8F8F8;
+    --footer-bg: #3C1287;
+    --icon-menu :url(../assets/images/menu-icon.png);
+}
+
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    counter-reset: num;
+    background-color: var(--bg-color) !important;
+}
+
+/* nav */
+
+.active-nav{
+    position: relative;
+}
+
+.active-nav::before{
+    content: '';
+    bottom: 0;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    border-bottom: 2px solid var(--decor-color);
+}
+
+.navbar{
+    color: var(--font-color);
+    background-color: var(--bg-color-fore);
+}
+
+.navbar-nav a{
+    color: var(--font-color);
+}
+
+.navbar-nav a:hover{
+    color: var(--font-color);
+}
+.dropdown .dropdown-inside,
+.dropdown .dropdown-menu{
+    transition: all .5s ease-in;
+    border-left: 2px solid var(--decor-color);
+    background-color: var(--bg-drop-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.359);
+}
+
+.navbar-toggler-icon{
+    background-image: var(--icon-menu) !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item{
+    color: var(--font-color);
+}
+.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: var(--hover-color);
+}
+
+.dropdown-menu{
+    position: relative;
+}
+
+.dropdown-menu ul{
+    padding-left: 0;
+}
+
+.dropdown-inside{
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 100%;
+}
+
+
+.navbar-brand{
+    width: 7rem;
+}
+
+/* prodi Eko & Sosial */
+.second{
+    top: 40px;
+}
+/* prodi Sains & Teknologi */
+.third{
+    top: 70px;
+}
+
+.Items:hover .dropdown-inside{
+    display: block;
+}
+
+
+.active-link{
+    color:var(--decor-color)!important;
+}
+
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+
+/* hero section */
+
+.hero{
+    position: relative;
+}
+
+.hero h1{
+    font-size: 7vw;
+    top: 40%;
+    position: absolute;
+
+}
+
+.hero h1 span{
+    color: var(--decor-color);
+}
+
+.card{
+    border: 0 !important;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(186, 186, 186, 0.194);
+}
+
+
+.card:hover{
+    cursor: pointer;
+    padding: 1rem;
+    box-shadow: 7px 7px 25px rgba(186, 186, 186, 0.194);
+}
+
+.card .icon{
+    color: var(--decor-color);
+    width: 7rem;
+}
+
+.card .btn{
+    border: 0;
+    background-color: var(--decor-color);
+} 
+.card .btn:hover{
+    border: 0;
+    background-color: #ec6d04;
+} 
+
+
+.template{
+    margin:0 auto;
+    color: #fff;
+    padding: 3rem 0;
+    background-color: var(--bg-color-fore);
+}
+
+.template h2{
+    text-transform: uppercase;
+    color: var(--decor-color);
+}
+
+
+/* main section */
+
+
+.list-item{
+    width: 70%;
+    color: #fff;
+}
+
+.list-item ul li{
+    list-style: none;
+}
+
+.icon,
+.list-item .icon{
+    width: 1.51rem;
+    color: var(--decor-color);
+}
+
+
+.list-item span{
+    color: var(--decor-color);
+}
+
+.list-item p{
+    max-width: 90%;
+}
+
+.acep .col:nth-child(1){
+    width: 50%;
+}
+
+
+.card-title,
+.acep h1{
+    color: var(--decor-color);
+}
+
+.avatar img{
+    width: 30%;
+}
+
+.btn-primary{
+    padding: 0 10px;
+    border: 0 !important;
+    width: max-content;
+    background-color: var(--decor-color) !important;
+}
+
+.navbar-nav .text-color{
+    color: var(--decor-color) !important;
+}
+.text-color{
+    width: 90%;
+    cursor: pointer;
+    color: var(--decor-color);
+}
+
+.news .icon,
+.news .text-color{
+    color: var(--bg-color-fore);
+}
+
+.number{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    padding: 1px 10px;
+    color: var(--bg-color-fore);
+    background-color: var(--decor-color);
+}
+
+.number::before{
+    counter-increment: num;
+    content: counter(num);
+}
+
+/* footer section */
+footer ul{
+    padding-left: 0;
+}
+
+footer ul li a{
+    color: var(--bg-color);
+    text-decoration: none;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+    color: var(--decor-color);
+}
+footer ul li{
+    list-style: none;
+}
+
+.footer-text{
+    background-color: var(--footer-bg);
+}
+
+
+.side{
+    width: 50%;
+}
+
+
+/* Back to Top */
+
+.scrolltoTop svg{
+    height: 2rem;
+}
+
+.scrolltoTop{
+    transition: display 1s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px var(--footer-bg);
+    background-color: var(--bg-drop-color);
+}
+
+/* img background */
+
+.main{
+    height: 28rem;
+    position: relative;
+}
+
+
+.main::before{
+    content: '';
+    height: 400px;
+    width: 100%;
+    filter: brightness(.2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4A1B9D;
+    background-size:cover;
+    position: absolute;
+}
+
+.main h1{
+    margin:0 auto;
+    position: absolute;
+    font-size: 4rem;
+    top: 35%;
+    left: 0; 
+    right: 0; 
+    margin:0 auto; 
+    text-align: center;
+    color: #ec6d04;
+    font-size: 5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Mansonry Grid */
+
+#mansonry{
+    width: 100vw ;
+}
+
+#card{
+    margin:1rem;
+}
+
+
+/* ACEP IMG */
+
+.acep-img::before{
+    background-image: url('../assets/images/ACEP/acep.jpg');
+}
+
+/* Sejarah img */
+
+.sejarah-img::before{
+    background-size: cover;
+    background-image: url('https://home.amikom.ac.id/media/2020/01/unesco.jpg');
+}
+
+/* .visimisi-img */
+
+.visimisi-img::before{
+    background-size: cover;
+    background-image: url('https://home.amikom.ac.id/media/2020/01/HEAD.jpg');
+}
+
+/* .visimisi-img */
+
+.award-img::before{
+    background-size: cover;
+    background-image: url('https://i0.wp.com/infoproduk.web.id/wp-content/uploads/2022/01/jurusan-amikom-jogja-biaya-kuliah-amikom-jogja.jpg?resize=640%2C360&ssl=1');
+}
+
+
+
+/* beasiswa IMG */
+
+.bea-img::before{
+    background-image: url('https://home.amikom.ac.id/media/2020/08/a6175853-500b-4412-aa73-6862289300ec-1024x372.jpg');
+}
+
+.bea-img h1{
+    text-shadow: 1px 1px 15px rgb(32, 32, 32);
+}
+
+/* akademik IMG */
+
+.aka-img::before{
+    background-image: url('https://home.amikom.ac.id/media/2019/12/7.jpg');
+}
+
+.akademik a{
+    color: var(--bg-color-fore);
+}
+
+
+.organisasi-img::before{
+    background-image: url('https://lh3.googleusercontent.com/p/AF1QipNFCZDxkyr9qUJWMTOOlBQaivDBbldoJZq5IXJo=w1080-h608-p-no-v0');
+}
+
+/* prodi IMG */
+
+.prodi-img::before{
+    background-image: url('https://2.bp.blogspot.com/-9SIHBcpXVTM/WXXyoX4quiI/AAAAAAAAIg4/EBCiALwTs2kl05bFI5Loamq8cddhQVeqACLcBGAs/s1600/fakultas-program-studi-universitas-amikom.jpg');
+}
+
+
+/* sarana IMG */
+.sarana-img::before{
+    background-image: url('http://rspauhardjolukito.com/assets/public/WhatsApp%20Image%202021-05-11%20at%2010.04.33.jpeg');
+}
+
+
+/* border */
+
+.border-warn{
+    border-color: var(--decor-color);
+}
+
+/* fasilitas */
+.fasilitas .card:hover{
+    transition: all .2s ease-in;
+    background-color: var(--bg-color-fore);
+    color: var(--bg-color);
+}
+
+
+/* Panduan */
+
+.bg-purl{
+    color: var(--bg-color);
+    background-color: var(--bg-color-fore) !important;
+}
+
+
+.btn a:hover{
+    color: var(--bg-color) !important;
+}
+
+/* beasiswa */
+
+.beasiswa h3{
+    margin: 2rem 0;
+}
+
+
+/* nav border */
+
+.nav-border-bottom{
+    position: relative;
+}
+
+.nav-border-bottom:before{
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    bottom: -5px;
+    left:40px;
+    border-bottom: 5px solid var(--decor-color);
+}
+
+
+/* responsive class */
+.bg-purl .d-flex{
+    padding: 0 2rem !important;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .dropdown .dropdown-inside,
+    .dropdown .dropdown-menu{
+        transition: all .5s ease-in;
+        border-left: 2px solid var(--decor-color);
+        background-color: var(--bg-drop-color);
+        box-shadow:inset 1px 1px 10px rgba(0, 0, 0, 0.159);
+    }
+
+    .nav-border-bottom:before{
+        content:"";
+        position: absolute;
+        width: 50px;
+        height: 5px;
+        bottom: -5px;
+        left:0;
+        right:0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 5px solid var(--decor-color);
+    }
+    
+    .dropdown-inside{
+        display: block;
+        list-style: none;
+        position: relative;
+        top: 10px;
+        left: 0;
+        padding: 10px 0;
+        margin:0 20px 10px;
+    }
+
+    .acep .w-25{
+        width: 100% !important;
+    }
+
+    .acep p.w-50{
+        width: 100% !important;
+    }
+
+    .acep.w-75{
+        width: 100% !important;
+    }
+
+    .img-footer.w-25{
+        width: 50% !important;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    /* sejarah  */
+
+    .responsive .w-75{
+        width: 100% !important;
+    }
+
+
+    
+    #card{
+        width: 100% !important;
+        margin: 5px;
+    }
+
+    .bg-purl .d-flex{
+        padding: 0!important;
+    }
+    .beasiswa .w-75{
+        width: 100% !important;   
+    }
+    .avatar img{
+        min-width: 40%;
+    }
+
+    .side{
+        width: 60%;
+    }
+
+    .list-item{
+        width: 100%;
+    }
+    .content-list{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .bg-purl .card-body{
+        padding: 1rem 0;
+    }
+
+    .main h1{
+        font-size: 7vw;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .bg-purl.w-75{
+        width: 100% !important;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .avatar{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .avatar img{
+        width: 60%;
+    }
+
+    .side{
+        width: 90%;
+    }
+}

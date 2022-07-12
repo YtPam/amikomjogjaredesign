@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="strict-origin" />
+    <meta name="viewport" content="width=device-width, initial-scle=1.0" />
+    <title>S1 ILMU KOMUNIKASI</title>
+    <link
+      rel="icon"
+      href="https://d3ti.amikom.ac.id/assets/themes/tailwind03/images/favicon.png"
+      type="image/gif"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scrolltoTop d-none" id="scrolltoTop" onclick="backToTop()">
+      <i class="icon w-25 bx bx-up-arrow-alt fs-1"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg my-2">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end py-2"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Profil<box-icon color="#FF7500" name="chevron-down"></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../sejarah.html">Sejarah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../visimisi.html"
+                    >Nilai, Visi, Misi dan Tujuan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../sarana_prasarana.html">
+                    Sarana dan Prasarana</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center active-nav"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Fakultas<box-icon
+                  color="#FF7500"
+                  name="chevron-down"
+                ></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ilmu Komputer</a>
+                  <ul class="dropdown-inside">
+                    <li>
+                      <a class="dropdown-item" href="d3mi.html"
+                        >D3 Manajemen Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="d3ti.html"
+                        >D3 Teknik Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="informatika.html"
+                        >Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="tekinf.html"
+                        >Teknologi Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="sisinf.html"
+                        >Sistem Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="tekkom.html"
+                        >Teknik Komputer</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ekonomi & Sosial</a>
+                  <ul class="dropdown-inside second">
+                    <li>
+                      <a class="dropdown-item" href="akuntansi.html"
+                        >Akuntansi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-color" href="ilkom.html"
+                        >Ilmu Komunikasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="ekonomi.html">Ekonomi</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="HI.html"
+                        >Hubungan Internasional</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="IP.html"
+                        >Ilmu Pemerintahan</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="kewirausahaan.html"
+                        >Kewirausahaan</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Sains & Teknologi</a>
+                  <ul class="dropdown-inside third">
+                    <li>
+                      <a class="dropdown-item" href="geografi.html">Geografi</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="arsitektur.html"
+                        >Arsitektur</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="wilayahkota.html"
+                        >Perencanaan Wilayah dan Kota
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mti.html">Pascasarjana MTI</a>
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link mx-3" href="../akademik.html">Akademik</a>
+            <a class="nav-link mx-3" href="../beasiswa.html">Beasiswa</a>
+            <a class="nav-link mx-3" href="../organisasi/organisasi.html"
+              >Organisasi</a
+            >
+            <a class="nav-link mx-3" href="../awards.html">Awards</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main prodi-img">
+      <h1>ILMU KOMUNIKASI</h1>
+    </div>
+
+    <main class="container responsive">
+      <div class="my-5 w-75">
+        <h3 class="my-4"><b>Profil Prodi Ilmu Komunikasi</b></h3>
+        <br />
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <iframe
+              width="100%"
+              height="600"
+              src="https://youtube.com/embed/XB8HO_7-EPo"
+              frameborder="0"
+              allowfullscreen
+              alt="Amikom"
+            ></iframe>
+          </div>
+        </section>
+        <br /><br /><br />
+        <section class="mx-auto w-100">
+          <div class="w-100">
+            <iframe
+              width="100%"
+              height="600"
+              src="https://youtube.com/embed/DszrN4JxvHw"
+              frameborder="0"
+              allowfullscreen
+              alt="Amikom"
+            ></iframe>
+          </div>
+        </section>
+        <br /><br />
+        <h5 class="my-4"><b>Profil Program Studi</b></h5>
+        <p>
+          Program studi S1 Ilmu Komunikasi merupakan salah satu prodi di
+          Fakultas Ekonomi dan Sosial Universitas AMIKOM Yogyakarta yang
+          memiliki empat spesialisasi yaitu Visual Design, Marketing,
+          Broadcasting, dan Cinema. Program studi ini menyediakan sistem
+          pengajaran yang menyeimbangkan pembelajaran formal di kelas dengan
+          praktek profesional atau kejuruan. Salah satu keunggulan program studi
+          ini adalah memberikan kesempatan yang luas bagi para mahasiswa untuk
+          dapat langsung mengambil peran dalam berbagai bidang; penyiaran,
+          perfilman, periklanan, maupun bidang-bidang lainnya di dunia ilmu
+          komunikasi.
+        </p>
+        <p>
+          Mahasiswa prodi Ilmu Komunikasi juga berkesempatan untuk mendapatkan
+          pengalaman langsung melalui berbagai program kerjasama prodi dengan
+          industri, dan program kerjasama lainnya. Seperti; berkesempatan untuk
+          bekerja dengan tim penyiar Radio MQFM, membuat program siaran TV di
+          RBTV, bekerja di Im Production MSV Pictures, Agensi Periklanan Mataram
+          Surya Visi, dan masih banyak lagi. Tidak hanya itu, melalui kurikulum
+          yang disusun oleh prodi, mahasiswa didorong untuk mandiri dan mampu
+          menciptakan peluang kerja (berwirausaha) dibidang kreatif ilmu
+          komunikasi, hal ini dilakukan agar mahasiswa siap bersaing secara
+          global.
+        </p>
+        <p>
+          Dengan bekal keilmuan serta skill mahasiswa di bidang ilmu komunikasi,
+          AMIKOM International Office mendukung mahasiswa untuk terus
+          meningkatkan capaian prestasi di sektor pendidikan dengan mengikuti
+          exchange program dengan perguruan tinggi di lingkup internasional
+          seperti Deakin University, University of Tasmania, Budapest Business
+          School, Szechenyi Isvan University, Gwangju Institute of Science and
+          Technology, Asia University, Lunghwa University of Science and
+          Technology, Haute Ecole Albert Jacquard, Unitar International
+          University, Universiti Teknologi Mara, The Institute of Technical
+          Education (ITE) Singapore, dll. Selain itu mahasiswa didorong untuk
+          mengikuti kegiatan mobilitas jangka pendek dengan mitra institusi
+          media di seluruh dunia seperti Walt Disney, Tencent, Paramount
+          Pictures, California Pictures, KRU Studio, Blackberry, CJ
+          Entertainment, In2 Group, dll.
+        </p>
+        <br />
+        <h5 class="my-4"><b>Visi dan Misi Prodi Ilmu Komunikasi</b></h5>
+        <p>
+          <b>Visi Prodi Ilmu Komunikasi</b>
+        </p>
+        <p>
+          Menjadikan Program Studi Ilmu Komunikasi Universitas Amikom Yogyakarta
+          sebagai rujukan pengembangan ilmu dan praktik dalam bidang visual
+          design, marketing communication, broadcasting, dan cinema di Indonesia
+          pada tahun 2030.
+        </p>
+        <br />
+        <p>
+          <b>Misi Prodi: Unggul Dalam Bidang Pendidikan</b>
+        </p>
+        <ul>
+          <li>
+            Melaksanakan dan mengembangkan pendidikan tinggi bidang pendidikan
+            Ilmu Komunikasi berbasis entrepreneur yang berkualitas, produktif
+            dan profesional.
+          </li>
+          <br />
+          <li>
+            Membangun suasana akademik yang kondusif untuk mendukung proses
+            belajar mengajar, pembinaan individu, dan pengembangan karakter
+          </li>
+          <br />
+          <li>
+            Mendorong upaya peningkatan kualitas sumber daya manusia (mahasiswa,
+            dosen dan karyawan) melalui pendidikan berkelanjutan, agar
+            berwawasan luas, memiliki perspektif global, dan pemahaman kondisi
+            lingkungan.
+          </li>
+          <br />
+          <li>
+            Meningkatkan pemahaman dalam keilmuan bidang Ilmu Komunikasi dengan
+            penguasaan ICT (Information and Communication Technology).
+          </li>
+          <br />
+          <li>
+            Menjalin relasi dengan seluruh program studi ilmu komunikasi dan
+            asosiasi bidang ilmu komunikasi baik lokal, nasional, internasional,
+            serta stakeholder lain guna meningkatkan kualitas akademik dan
+            penerapan Ilmu Komunikasi.
+          </li>
+        </ul>
+        <br />
+        <p>
+          <b>Misi Prodi: Unggul Dalam Penelitian</b>
+        </p>
+        <ul>
+          <li>
+            Melaksanakan penelitian dalam rangka pengembangan ilmu pengetahuan.
+          </li>
+          <br />
+          <li>
+            Mendorong tumbuhnya kreativitas untuk menghasilkan karya-karya di
+            bidang Ilmu Komunikasi yang bermanfaat bagi kehidupan masyarakat.
+          </li>
+          <br />
+          <li>
+            Mendapatkan pengakuan nasional dan internasional dalam bidang
+            penelitian dengan menghasilkan karya baru yang sesuai bidang Ilmu
+            Komunikasi atau interdisiplin ilmu.
+          </li>
+        </ul>
+        <br />
+        <p>
+          <b>Misi Prodi: Unggul Dalam Pengabdian Masyarakat</b>
+        </p>
+        <ul>
+          <li>Melaksanakan pengabdian kepada masyarakat.</li>
+          <br />
+          <li>
+            Melaksanakan pembinaan sivitas akademika dan mendorong terciptanya
+            hubungan yang erat dan baik dengan lingkungan.
+          </li>
+          <br />
+          <li>
+            Menerapkan keahlian di bidang Ilmu Komunikasi untuk menghasilkan
+            produk/layanan yang bermanfaat dan mudah digunakan oleh masyarakat.
+          </li>
+          <br />
+          <li>
+            Menyediakan SDM berkualitas tinggi yang mampu bekerja di berbagai
+            sektor, mampu mempromosikan terobosan-terobosan baru di bidang Ilmu
+            Komunikasi, dan tetap konsisten mengupayakan peningkatan
+            kesejahteraan masyarakat.
+          </li>
+        </ul>
+        <br />
+        <h5 class="my-4"><b>Program Kelas di Prodi Ilmu Komunikasi</b></h5>
+        <p>
+          Program studi (S1) Ilmu Komunikasi Universitas Amikom Yogyakarta
+          terdapat 2 program, yakni;
+        </p>
+        <ul>
+          <li>Kelas Program Reguler.</li>
+          <li>Kelas Program International.</li>
+        </ul>
+        <br />
+        <p>
+          <b>Kelas Program Reguler</b>
+        </p>
+        <p>
+          Merupakan program studi S1 Ilmu Komunikasi yang dapat diikuti oleh
+          banyak calon mahasiswa. Program studi S1 Ilmu Komunikasi memiliki
+          empat spesialisasi yaitu Visual Design, Marketing, Broadcasting, dan
+          Cinema. Program studi ini menyediakan sistem pengajaran yang
+          menyeimbangkan pembelajaran formal di kelas dengan praktek profesional
+          atau kejuruan. Salah satu keunggulan program studi ini adalah
+          memberikan kesempatan yang luas bagi para mahasiswa untuk dapat
+          langsung mengambil peran dalam berbagai bidang; penyiaran, perfilman,
+          periklanan, maupun bidang-bidang lainnya di dunia ilmu komunikasi.
+        </p>
+        <p>
+          Akun Instagram:
+          <a
+            href="https://www.instagram.com/ilmukomunikasiamikom/"
+            target="_blank"
+            >Ilmu Komunikasi</a
+          >
+        </p>
+        <br />
+        <p>
+          <b>Kelas Program Internasional.</b>
+        </p>
+        <p>
+          Bachelor Of Communication Science merupakan program studi S1 Ilmu
+          Komunikasi yang memberikan kesempatan kepada calon mahasiswa untuk
+          bisa merasakan pengalaman proses belajar dengan skema internasional;
+          seperti teman-teman dari luar Indonesia, materi pembelajaran yang
+          berbahasa inggris dan berbagai program lainnya. Program ini juga dapat
+          mendukung mahasiswa untuk terus meningkatkan capaian prestasi di
+          sektor pendidikan internasional dengan mengikuti exchange program
+          dengan perguruan tinggi di lingkup internasional.
+        </p>
+        <p>
+          Akun Instagram:
+          <a
+            href="https://www.instagram.com/amikomjogja.international/?hl=en"
+            target="_blank"
+            >International Program Amikom</a
+          >
+        </p>
+      </div>
+    </main>
+
+    <footer class="template pb-0">
+      <div class="container-lg">
+        <a href="/index.html"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid w-25 img-footer mb-4"
+            alt=""
+        /></a>
+        <div
+          class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mx-auto justify-content-lg-between"
+        >
+          <div class="col">
+            <ul class="fw-light text-light">
+              <p>
+                Alamat Kampus : JL .Ring Road Utara,<br />
+                Catur, Sleman, Yogyakarta
+              </p>
+              <li>Telp: (0274) 884201 - 207</li>
+              <li>Fax: (0274) 884208</li>
+              <li>Kodepos: 55283</li>
+
+              <li>
+                Email:
+                <a href="mailto:Amikom@amikom.ac.id">Amikom@amikom.ac.id</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="fw-light text-light">
+              <li><a href="../pmb.html">Pendaftaran</a></li>
+              <li><a href="../sejarah.html">Profil Amikom</a></li>
+              <li><a href="../awards.html">Awards</a></li>
+              <li><a href="../info-kampus.html">Info Kampus</a></li>
+              <li><a href="../info-pmb.html#biaya">Biaya</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul class="fw-light text-light list-group">
+              <li><a href="../akademik.html">Akademik</a></li>
+              <li><a href="../beasiswa.html">Beasiswa</a></li>
+              <li><a href="../news.html">Berita</a></li>
+              <li><a href="../creativeEko.html">Ekonomi Kreatif</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul
+          class="d-flex justify-content-lg-end gap-4 mt-5 justify-content-center"
+        >
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                ></path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text text-center mt-5 mb-0 py-4 fw-light">
+        Copyright ©2022 UNIVERSITAS AMIKOM YOGYAKARTA
+        <br />
+        All Right Reserved
+      </p>
+    </footer>
+    <script src="../../js/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

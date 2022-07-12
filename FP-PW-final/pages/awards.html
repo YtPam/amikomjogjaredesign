@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="strict-origin" />
+    <meta name="viewport" content="width=device-width, initial-scle=1.0" />
+    <title>AWARDS</title>
+    <link
+      rel="icon"
+      href="https://d3ti.amikom.ac.id/assets/themes/tailwind03/images/favicon.png"
+      type="image/gif"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scrolltoTop d-none" id="scrolltoTop" onclick="backToTop()">
+      <i class="icon w-25 bx bx-up-arrow-alt fs-1"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg my-2">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end py-2"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Profil<box-icon color="#FF7500" name="chevron-down"></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/pages/sejarah.html"
+                    >Sejarah</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/visimisi.html"
+                    >Nilai, Visi, Misi dan Tujuan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/sarana_prasarana.html">
+                    Sarana dan Prasarana</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Fakultas<box-icon
+                  color="#FF7500"
+                  name="chevron-down"
+                ></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ilmu Komputer</a>
+                  <ul class="dropdown-inside">
+                    <li>
+                      <a class="dropdown-item" href="prodi/d3mi.html"
+                        >D3 Manajemen Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/d3ti.html"
+                        >D3 Teknik Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/informatika.html"
+                        >Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/tekinf.html"
+                        >Teknologi Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/sisinf.html"
+                        >Sistem Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/tekkom.html"
+                        >Teknik Komputer</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ekonomi & Sosial</a>
+                  <ul class="dropdown-inside second">
+                    <li>
+                      <a class="dropdown-item" href="prodi/akuntansi.html"
+                        >Akuntansi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/ilkom.html"
+                        >Ilmu Komunikasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/ekonomi.html"
+                        >Ekonomi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/HI.html"
+                        >Hubungan Internasional</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/IP.html"
+                        >Ilmu Pemerintahan</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/kewirausahaan.html"
+                        >Kewirausahaan</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Sains & Teknologi</a>
+                  <ul class="dropdown-inside third">
+                    <li>
+                      <a class="dropdown-item" href="prodi/geografi.html"
+                        >Geografi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/arsitektur.html"
+                        >Arsitektur</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/wilayahkota.html"
+                        >Perencanaan Wilayah dan Kota
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="prodi/mti.html"
+                    >Pascasarjana MTI</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link mx-3" href="akademik.html">Akademik</a>
+            <a class="nav-link mx-3" href="beasiswa.html">Beasiswa</a>
+            <a class="nav-link mx-3" href="organisasi/organisasi.html"
+              >Organisasi</a
+            >
+            <a class="nav-link mx-3 active-nav" href="awards.html">Awards</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main award-img">
+      <h1>AWARDS</h1>
+    </div>
+
+    <main class="container beasiswa">
+      <div>
+        <p>
+          Official Selection Of Feature Animation.
+          <a href="http://woodburyff.com/" target="_blank"
+            ><del>Woodbury International Film Festival.</del></a
+          >
+          2019.
+          <a href="https://en.wikipedia.org/wiki/Salt_Lake_City" target="_blank"
+            >Salt Lake City,</a
+          >
+          USA. (Battle Of Surabaya)
+        </p>
+        <br />
+        <p>
+          Official Selection Of Best Feature.
+          <a
+            href="https://msvstudio.co.id/news-id/3370910/battle-of-surabaya-diputar-di-eropa-utara/"
+            target="_blank"
+            ><del>North Europe International Fil Festival.</del></a
+          >2018.
+          <a href="https://id.wikipedia.org/wiki/London" target="_blank"
+            >London, </a
+          >United Kingdom. (Battle Of Surabaya)
+        </p>
+        <br />
+        <p>
+          Silver Award Of Digital Content.
+          <a
+            href="https://msvstudio.co.id/news-id/2301342/battle-of-surabaya-raih-penghargaan-asean/"
+            target="_blank"
+            ><del
+              >AICTA (ASEAN Information And Communication Technology Awards).
+            </del></a
+          >2018.
+          <a href="https://id.wikipedia.org/wiki/Bali" target="_blank">
+            Bali, </a
+          >Indonesia. (Battle Of Surabaya)
+        </p>
+        <br />
+        <p>
+          Best Feature.
+          <a href="https://www.romeprismaawards.com/" target="_blank"
+            >PRISMA (Rome Independent Film Awards). </a
+          >2018.
+          <a href="https://id.wikipedia.org/wiki/Roma" target="_blank">Roma,</a>
+          Italia. (Battle Of Surabaya)
+        </p>
+        <br />
+        <p>
+          Simbah Digital Farmer, Winner, 2018 Asia-Pacific Youth Leadership,
+          Innovation and Entrepreneurship SDGs Startup Awards di Beijing,
+          China-Mujiyanto
+        </p>
+        <br />
+        <p>
+          Fishgator, Gold Medal di World Invention Creativity Olympic (WICO)
+          Award 2018 in Seoul, South Korea
+        </p>
+        <br />
+        <p>Awardee, Australia Award Star-Up Ecosystem, 2018, Australia</p>
+        <br />
+        <p>Silver Medal, Thailand Robotic Competition, 2018, Thailand.</p>
+        <br />
+        <p>3th Place, IIUM Robotic Competition, 2018, Malaysia</p>
+        <br />
+        <p>Finalist, ASIA Hardware Battle, 2018</p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation,Hollywood
+          International Motion Pictures Film Festival 2018
+        </p>
+        <br />
+        <p>
+          November 10th (Battle Of Surabaya), Best Animation Feature, Glendale
+          international film festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation Film, European
+          Cinematography Awards, 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation, Amsterdam
+          International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Nominee Best Film, Amsterdam
+          International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Nominee Best Sound Design,
+          Amsterdam International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation,London, Gold Movie
+          Awards 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation,Oniros Film Awards
+          2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Outstanding Achievement Award –
+          Animated Film, Calcutta International Cult Film Festival 2018.
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation Feature Film,
+          Shouthern Cone International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation, Festival
+          International De Cine Del Cono Sur, 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation, Venezuela, Ficocc
+          Five Continents International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Writer ,Toronto, ATFF SPRING
+          Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Nominee Best Animation, London
+          International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Nominee Best Original Screenplay,
+          of A Feature Film, London International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Nominee Best Editing, of A Feature
+          Film, London International Film Festival 2018
+        </p>
+        <br />
+        <p>
+          Gablind, Merit Winner Asia Pacific IICT Award, Dhaka, 2017 – Jeki
+          Kuswanto, Eko Rahmat Slamet Hidayat, Arvin C Frobenius
+        </p>
+        <br />
+        <p>
+          Fishtron, Second Merit Winner Asia Pacific IICT Award, Dhaka, 2017 –
+          Donni Prabowo, Yudhis Tiro Kabul Y.
+        </p>
+        <br />
+        <p>
+          AmikomOC, Second Winner, Leaderboard Rookie Rumble 43, April 30, 2017-
+          AmikomOC
+        </p>
+        <br />
+        <p>
+          Supermiko, Fourth Winner, Leaderboard Rookie Rumble 42, April 2, 2017-
+          Miko Kastomo Putro.
+        </p>
+        <br />
+        <p>
+          Supermiko, Second Winner, Leaderboard Rookie Rumble 41, March 15,
+          2017- Miko Kastomo Putro.
+        </p>
+        <br />
+        <p>
+          HICO, Nominee, The use of ICTs in education for disadvantaged groups,
+          UNESCO 2017.-Donni Prabowo, Pendi Ventri Hendika, Bety Wulan Sari
+        </p>
+        <br />
+        <p>
+          Ahada, Nominee, The use of ICTs in education for disadvantaged groups,
+          UNESCO 2017 – Donni Prabowo, Afif Bimantara, Bram Pratowo
+        </p>
+        <br />
+        <p>
+          BTOUCH, Nominee, The use of ICTs in education for disadvantaged
+          groups, UNESCO 2017.- Elik Hari Muktafin, Budi Sulistiyo Jati,
+          Heriyanto
+        </p>
+        <br />
+        <p>
+          Gablind, Bronze Asia SMAR APP Award, Hongkong, 2017 – Jeki Kuswanto,
+          Eko Rahmat Slamet Hidayat, Arvin C Frobenius
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation, Milan
+          International Film Festival 2017-M.Suyanto, Aryanto Yuniawan, Adi
+          Djayusman, Lukman Chandra, Heri Sulistyo
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation,Berlin
+          International Film Festival 2017-M.Suyanto, Aryanto Yuniawan, Adi
+          Djayusman, Lukman Chandra, Heri Sulistyo
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Best Animation, Nice International
+          Film Festival 2017-M.Suyanto, Aryanto Yuniawan, Adi Djayusman, Lukman
+          Chandra, Heri Sulistyo
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Gold Remi Award, Worldfest,
+          Houston, International Film Festival 2016-M.Suyanto, Aryanto Yuniawan,
+          Adi Djayusman, Lukman Chandra, Heri Sulistyo
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Grandprize Winner, SICAF 2016, The
+          20th Seoul International Cartoon & Animation Festival – M.Suyanto,
+          Aryanto Yuniawan, Adi Djayusman, Lukman Chandra, Heri Sulistyo
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Winner Best Animation, 3th Noida
+          International Film Festival 2016 – M.Suyanto, Aryanto Yuniawan, Adi
+          Djayusman, Lukman Chandra, Heri Sulistyo.
+        </p>
+        <br />
+        <p>
+          Gablind, Nominee International ICT Innovative Service Contest, Taiwan,
+          2016 – Jeki Kuswanto, Eko Rahmat Slamet Hidayat, Arvin C Frobenius
+        </p>
+        <br />
+        <p>
+          BSmart, Nominee Asia Pacific ICT Award, Taiwan, 2016 – Elik Hari
+          Muktafin, Budi Sulistiyo Jati, Heriyanto
+        </p>
+        <br />
+        <p>
+          Gablind, Nominee Asia Pacific ICT Award, Taiwan, 2016 -Jeki Kuswanto,
+          Eko Rahmat Slamet Hidayat, Arvin C Frobenius
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Official Selection, Holland
+          Animation Film Festival 2016 – M.Suyanto, Aryanto Yuniawan, Adi
+          Djayusman, Lukman Chandra, Heri Sulistyo.
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Official Selection, Animation
+          Dingle, Ireland 2016 – M.Suyanto, Aryanto Yuniawan, Adi Djayusman,
+          Lukman Chandra, Heri Sulistyo.
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Special Screening, New Chitose
+          Airport Animation Festival Japan, 2016 – M.Suyanto, Aryanto Yuniawan,
+          Adi Djayusman, Lukman Chandra, Heri Sulistyo
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Special Screening, Athens
+          Animfest, Greece, 2016 – M.Suyanto, Aryanto Yuniawan, Adi Djayusman,
+          Lukman Chandra, Heri Sulistyo.
+        </p>
+        <br />
+        <p>
+          HICO, Nominee Asia Pacific ICT Award, Srilangka, 2015 – Donni Prabowo,
+          Pendi Ventri Hendika, Bety Wulan Sari
+        </p>
+        <br />
+        <p>
+          BToucht, Nominee Asia Pacific ICT Award, Srilangka, 2015 – Elik Hari
+          Muktafin, Budi Sulistiyo Jati, Heriyanto
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), The Faces of Indonesia Cinema
+          Today, 10th Jogja NETPAC Asian Film Festival 2015 – M.Suyanto, Aryanto
+          Yuniawan, Adi Djayusman, Lukman Chandra, Heri Sulistyo.
+        </p>
+        <br />
+        <p>
+          Battle of Surabaya (November 10th), Nominated for Best Foreign
+          Animation/Family Trailer Award (2014) – M.Suyanto, Aryanto Yuniawan,
+          Adi Djayusman, Lukman Chandra, Heri Sulistyo
+        </p>
+        <br />
+        <p>
+          AHADA, Nominees @ Asia Pacific ICT Alliance (APICTA) Awards, Jakarta
+          2014 – Donni Prabowo, Afif Bimantara, Bram Pratowo
+        </p>
+        <br />
+        <p>
+          Finalist Grand Final Master Overclocking Arena (MOA), Taiwan, 2014 –
+          Christi Roderto R.S
+        </p>
+        <br />
+        <p>
+          Winner of Asia-Pasific Class A, Master Overclocking Arena (MOA),
+          Jakarta, 2014 – Christi Roderto R.S
+        </p>
+        <br />
+        <p>
+          Winner of International Movie Trailer Festival (IMTF) 2013 –
+          M.Suyanto, Aryanto Yuniawan, Adi Djayusman, Lukman Chandra, Heri
+          Sulistyo
+        </p>
+        <br />
+        <p>
+          AHADA, Nominees @ Asia Pacific ICT Alliance (APICTA) Awards,Hongkong
+          2013 – Donni Prabowo, Afif Bimantara, Bram Pratowo
+        </p>
+        <br />
+        <p>
+          SHAND, Nominee International ICT Innovative Service Contest, Taiwan,
+          2012.- Nuruddin Miranda, Donni Prabowo, Afif Bimantara
+        </p>
+        <br />
+        <p>
+          The Winner of The Best Websites Tourism Promotion Organization Asia
+          Pacific Cities, Beijing, China 2011. Airport
+        </p>
+        <br />
+        <p>
+          Airpot Safety, Nominees Asia Pacific ICT Alliance (APICTA) Awards
+          2011- Hanafi
+        </p>
+        <br />
+        <p>
+          Ad@hand, Nominees Asia Pacific ICT Alliance (APICTA) Awards 2011-
+          Hanafi
+        </p>
+        <br />
+        <p>
+          The Best e-Practice Asia Pacific Economic Digital Opportunity Center
+          Award (ADOC) Award – Arief Setyanto, S.Si, MT
+        </p>
+        <br />
+        <p>
+          The Best e-Practice Asia Pacific Economic Digital Opportunity Center
+          Award (ADOC) Award – Kusrini, Dr., M.Kom
+        </p>
+        <br />
+        <p>
+          V-Track, Nominees @ Asia Pacific ICT Alliance (APICTA) Awards,
+          Melbourne,Australia 2009 – Andi Sunyoto
+        </p>
+        <br />
+        <p>
+          Tiwule, Nominees @ Asia Pacific ICT Award Alliance (APICTA),
+          Melbourne,Australia 2009 – Hendro Wibowo
+        </p>
+        <br />
+        <p>
+          Merit award @ Asia Pacific ICT Alliance (APICTA) Awards,Macau, 2006 –
+          Hanif Al Fatta Award3
+        </p>
+        <br />
+        <p>
+          Nominees of Urban Animation International Festival – M. Suyanto, Prof.
+          Dr, M.M. and Aryanto Yuniawan, A.Md
+        </p>
+        <br />
+        <p>
+          Merit award @ Asia Pacific ICT Alliance (APICTA) Awards, Macau 2006-
+          Arief Setyanto
+        </p>
+        <br />
+        <p>The Winner of Oto Web Contest, Sumitomo Corporation 2006 – Jaeni</p>
+        <br />
+        <p>
+          The Best e-Practices Asia Pacific Economic Digital Opportunity Center
+          (ADOC) Award,2006 – Kusrini
+        </p>
+        <br />
+        <p>
+          The Best e-Practices Asia Pacific Economic Digital Opportunity Center
+          (ADOC) Award,2006 – Arief Setyanto
+        </p>
+        <br />
+        <p>Winner ASEAN Development Citra Award -2005, M. Suyanto</p>
+        <br />
+        <p>The Winner of Techscape Anniversary Web Contest, 2004 – Jaeni</p>
+        <br />
+      </div>
+    </main>
+
+    <footer class="template pb-0">
+      <div class="container-lg">
+        <a href="/index.html"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid w-25 img-footer mb-4"
+            alt=""
+        /></a>
+        <div
+          class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mx-auto justify-content-lg-between"
+        >
+          <div class="col">
+            <ul class="fw-light text-light">
+              <p>
+                Alamat Kampus : JL .Ring Road Utara,<br />
+                Condong Catur, Sleman, Yogyakarta
+              </p>
+              <li>Telp: (0274) 884201 - 207</li>
+              <li>Fax: (0274) 884208</li>
+              <li>Kodepos: 55283</li>
+
+              <li>
+                Email:
+                <a href="mailto:Amikom@amikom.ac.id">Amikom@amikom.ac.id</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="fw-light text-light">
+              <li><a href="pmb.html">Pendaftaran</a></li>
+              <li><a href="sejarah.html">Profil Amikom</a></li>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="info-kampus.html">Info Kampus</a></li>
+              <li><a href="info-pmb.html#biaya">Biaya</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul class="fw-light text-light list-group">
+              <li><a href="akademik.html">Akademik</a></li>
+              <li><a href="beasiswa.html">Beasiswa</a></li>
+              <li><a href="news.html">Berita</a></li>
+              <li><a href="creativeEko.html">Ekonomi Kreatif</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul
+          class="d-flex justify-content-lg-end gap-4 mt-5 justify-content-center"
+        >
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                ></path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text text-center mt-5 mb-0 py-4 fw-light">
+        Copyright ©2022 UNIVERSITAS AMIKOM YOGYAKARTA
+        <br />
+        All Right Reserved
+      </p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

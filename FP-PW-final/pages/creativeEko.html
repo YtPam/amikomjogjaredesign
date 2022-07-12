@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="strict-origin" />
+    <meta name="viewport" content="width=device-width, initial-scle=1.0" />
+    <title>EKONOMI KREATIF</title>
+    <link
+      rel="icon"
+      href="https://d3ti.amikom.ac.id/assets/themes/tailwind03/images/favicon.png"
+      type="image/gif"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scrolltoTop d-none" id="scrolltoTop" onclick="backToTop()">
+      <i class="icon w-25 bx bx-up-arrow-alt fs-1"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg my-2">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end py-2"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Profil<box-icon color="#FF7500" name="chevron-down"></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/pages/sejarah.html"
+                    >Sejarah</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/visimisi.html"
+                    >Nilai, Visi, Misi dan Tujuan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/sarana_prasarana.html">
+                    Sarana dan Prasarana</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="nav-link mx-3 d-flex align-self-center"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Fakultas<box-icon
+                  color="#FF7500"
+                  name="chevron-down"
+                ></box-icon
+              ></a>
+              <ul class="dropdown-menu">
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ilmu Komputer</a>
+                  <ul class="dropdown-inside">
+                    <li>
+                      <a class="dropdown-item" href="prodi/d3mi.html"
+                        >D3 Manajemen Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/d3ti.html"
+                        >D3 Teknik Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/informatika.html"
+                        >Informatika</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/tekinf.html"
+                        >Teknologi Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/sisinf.html"
+                        >Sistem Informasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/tekkom.html"
+                        >Teknik Komputer</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Ekonomi & Sosial</a>
+                  <ul class="dropdown-inside second">
+                    <li>
+                      <a class="dropdown-item" href="prodi/akuntansi.html"
+                        >Akuntansi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/ilkom.html"
+                        >Ilmu Komunikasi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/ekonomi.html"
+                        >Ekonomi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/HI.html"
+                        >Hubungan Internasional</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/IP.html"
+                        >Ilmu Pemerintahan</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/kewirausahaan.html"
+                        >Kewirausahaan</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="Items">
+                  <a class="dropdown-item" href="#">Sains & Teknologi</a>
+                  <ul class="dropdown-inside third">
+                    <li>
+                      <a class="dropdown-item" href="prodi/geografi.html"
+                        >Geografi</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/arsitektur.html"
+                        >Arsitektur</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="prodi/wilayahkota.html"
+                        >Perencanaan Wilayah dan Kota
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="prodi/mti.html"
+                    >Pascasarjana MTI</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link mx-3" href="akademik.html">Akademik</a>
+            <a class="nav-link mx-3" href="beasiswa.html">Beasiswa</a>
+            <a class="nav-link mx-3" href="organisasi/organisasi.html"
+              >Organisasi</a
+            >
+            <a class="nav-link mx-3" href="awards.html">Awards</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <div class="main acep-img">
+        <h1>Creative Economy Park</h1>
+      </div>
+    </div>
+    <main class="container acep w-75">
+      <section>
+        <p class="text-dark">
+          AMIKOM CREATIVE ECONOMY PARK (ACEP) adalah area yang dikelola untuk
+          mempromosikan basis inovasi pada penggunaan imajinasi kreatif untuk
+          meningkatkan nilai nilai di Universitas AMIKOM Yogyakarta. ACEP
+          merupakan ekosistem ekonomi kreatif yang telah bekerjasama dengan
+          perusahaan di Silicon Valley dan Hollywood. Taman ini terdiri dari
+          perusahaan film, animasi, musium animasi, radio, TV, game, desain
+          iklan, pengembangan perangkat lunak, konsultasi investasi, dan desain
+          proyek menjadi satu kesatuan.
+        </p>
+        <div class="d-flex align-items-center flex-wrap flex-lg-nowrap">
+          <img
+            src="https://home.amikom.ac.id/media/2020/12/IMG_2361-300x200.jpg"
+            alt=""
+            class="img-fluid"
+          />
+          <p class="p-2">
+            Presiden Silicon Valley Innovation Center, Andrey Kunov PhD, sedang
+            memberikan ceramah tentang Entrepreneur Technology di Ruang Cinema,
+            Universitas Amikom Yogyakarta. Untuk membekali alumni unggul dalam
+            kompetisi di dunia kerja, Universitas AMIKOM Yogyakarta melengkapi
+            lulusan dengan pengalaman nyata di AMIKOM CREATIVE ECONOMY PARK
+            sebagai pusat penelitian dan laboratorium nyata di dunia kerja atau
+            biasa disebut sebagai Teaching Industry..
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <h2>MSV STUDIO LEVEL 2 & 3 GEDUNG UNIT 2</h2>
+        <div class="d-flex align-items-center flex-wrap flex-lg-nowrap">
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/MANUGARGIKecil-300x224.jpg"
+            alt=""
+          />
+          <p class="p-2">
+            Executive Producer dari Hollywood Manu Gargi telah menandatangi
+            dengan Prof. Dr. M Suyanto, untuk membuat 5 film bersama dalam 5
+            tahun.Manu Gargi adalah seorang produser dan sutradara, yang dikenal
+            dengan The Peanut Butter Falcon (2019), Silence (2016) dan 99 Homes
+            (2014). Film yang diproduksi adalah Akira, Amir Hamza dan J.J.
+            Sineas Hollywood yang terlibat, antara lain Gill Adler, David
+            Reynolds, Nick Camecho, Marco Balsamo, Alexander Writh dan
+            sebagainya.
+          </p>
+        </div>
+        <h3 class="my-5">Film Garapan dari Amikom.</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/Ajisaka-Poster.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2 w-50">
+            Pada tahun 2012, proyek animasi 3D internasional masih dalam proses
+            pembuatan, Ajisaka, The King and the Flower of Life
+          </p>
+        </div>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/BOS-A0-212x300.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2 w-50">
+            November 10th”menceritakan kepada Anda petualangan Musa, seorang
+            penyemir sepatu berusia tiga belas tahun yang spontan, pemberani,
+            yang hidup di bawah tekanan kebutuhan atau kemiskinan di era Perang
+            Dunia II. Bertemu dengan Musa, Yumna telah mengubah hidupnya ke
+            perjalanan yang lebih berwarna. Kapten Yoshimura ingin perang segera
+            diakhiri dengan membantu Indonesia mencapai kemerdekaannya, kemudian
+            dia bisa kembali ke negaranya untuk bertemu istri dan putrinya.
+            Kioko, di Tokyo. Seperti ayah Musa, dia punya mengenal Musa sejak
+            dia masih kecil. Menjadi penyemir sepatu, Musa menjalani hidup
+            dengan sabar.
+          </p>
+        </div>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/Ajisaka-Poster.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2 w-50">
+            In 2020, MSV Studio has completed a short animated film entitled
+            Hikayat Ajisaka which is a finalist in FLICKFAIR, Los Angeles,
+            California, United State.Hikayat Ajisaka merupakan film pendek
+            terbaru dari MSV Studio dan diikutkan dalam festival film Flickfair
+            Film Festival 2020. Festival yang diadakan di Los Angeles,
+            California, USA tersebut memperebutkan 8 kategori, yaitu Best
+            Picture, Best Live-Action, Best Animation, Best Documentary, Best
+            Series, Best Comedy, Best Drama, dan Best Horror.
+          </p>
+        </div>
+        <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+          <img
+            src="https://i2.wp.com/english.amikom.ac.id/wp-content/uploads/golden-snail.2-scaled.jpg?resize=212%2C300"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2 w-50">
+            In 2021, MSV Studio is trying to finish Ajisaka’s film, and
+            preproduction of Golden Snail dan Timun Mas dan Sang Pangeran.
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/MSV-ServerKecil-300x176.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2">
+            Di sini mahasiswa dapat belajar mengelola bisnis multimedia seperti
+            produksi kartun, profil perusahaan, media planner, TV Komersial, dan
+            Program TV, dll. Beberapa karya profesional yang pernah dihasilkan
+            MSV adalah Profil Perusahaan BAP-PENAS , Profil Video FH UGM, Profil
+            Video Ever Oxi (Konimex), dan Film Kartun yang berjudul: Jatayu,
+            ABDAN, Lembah Petir, ACIL (Anak Cinta Lingkungan), kartun lm
+            Pendidikan BTKP dari DIY, Musa & Khidr, Selamat Tinggal Dunia. MSV
+            Studio merupakan salah satu studio film animasi terbesar di
+            indonesia.
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <h3>Museum Animasi</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/WhatsApp-Image-2020-02-13-at-3.49.32-PM-2-300x225.jpeg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/WhatsApp-Image-2020-02-13-at-3.49.35-PM-2-300x225.jpeg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/WhatsApp-Image-2020-02-13-at-3.49.34-PM-2-300x225.jpeg"
+            alt=""
+            class="img-fluid w-25"
+          />
+        </div>
+      </section>
+      <section class="my-5">
+        <h3>Studio RBTV</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/RBTV1-300x202.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2">
+            Di sini mahasiswa dapat belajar broadcasting seperti menjadi
+            presenter, menjadi kameramen, menjadi reporter, menjadi
+            scriptwriter, menjadi journalis televisi, dan sebagainya. RBTV
+            merupakan televisi asli jogja dan juga merupakan televisi daerah di
+            indonesia. Seiring dengan otonomi daerah dan semangat menciptakan TV
+            yang sesuai dengan masyarakat Jogjakarta sebagai kota pelajar,
+            budaya dan tujuan wisata, maka kehadiran RBTV sangat bermanfaat bagi
+            masyarakat pemirsa maupun industri pendukung pertelevisian (Rumah
+            Produksi, Penyelenggara Acara, Periklanan, dan lain sebagainya
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <h3>Bioskop (Level 4 Unit VI)</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2019/12/IMG_1595-300x200.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2">
+            AMIKOM Cinema terdiri dari 250 kursi, kecerahan tinggi, kualitas
+            gambar, dan keandalan – dalam bodi yang ringkas, sistem lampu ganda
+            yang inovatif, dengan lampu barunya, membantu membuat bodi ini
+            ringkas sekaligus memberikan kecerahan penuh 12.000 lm, dengan
+            220-240V Pengoperasian AC dan keajaiban dalam suara bioskop dengan
+            reputasi untuk kualitas, kinerja, dan keandalan yang tak tertandingi
+            sebagai satu-satunya produsen utama solusi bioskop lengkap dengan
+            pemrosesan, amplifikasi, dan pengeras suara yang terintegrasi ke
+            dalam keseluruhan yang mulus, QSC adalah solusi lengkap untuk semua
+            suara bioskop Anda kebutuhan
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <h3>Radio Swara Sembada. PT. (Radio MQ FM)</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/MQKecil5-1-300x200.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2">
+            Universitas AMIKOM Yogyakarta memiliki peran perguruan tinggi yang
+            sangat dihormati dalam pengembangan konsep TIK (Teknologi Informasi
+            & Komunikasi) di Yogyakarta. Untuk menunjang hal tersebut,
+            Universitas AMIKOM Yogyakarta memiliki beberapa unit bisnis yang
+            terkait dengan multimedia yaitu Production House, Advertising,
+            Portal, Televisi, dan Radio.
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <h3>PT. Time Excelindo</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/TEKecil1-300x200.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2">
+            PT. Time Excelindo (TE) berdiri sejak tahun 2003 dan bertempat di
+            Yogyakarta. Time Excelindo merupakan perusahaan swasta nasional yang
+            merupakan embrio bisnis profesional badan usaha dari perguruan
+            tinggi Universitas AMIKOM Yogyakarta. Time Excelindo merupakan
+            perusahaan di bidang Teknologi Informasi yang menyediakan total
+            solusi dengan fokus utama adalah Internet Service Provider (ISP) ,
+            Software Development, Consulting and Audit, Training, Infrastructure
+            Solution dan Network Services. Seiring berjalan nya waktu Time
+            Excelindo memahami pentingnya kepuasan pelanggan yang sesuai dengan
+            penjaminan mutu, sehingga pada tahun 2011 Time Excelindo mendapatkan
+            ISO 9001:2015 Cert No FS569888 dari The British Standards
+            Institution.
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <h3>GIT Solution</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/GITSKecil1jpg-300x149.jpg"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2">
+            PT.GIT Solution adalah salah satu Badan usaha milik Yayasan
+            UNIVERSITAS AMIKOM Yogyakarta yang bergerak pada jasa perencanaan
+            pembangunan dan pengembangan sistem informasi yang berskala nasional
+            dan siap bersaing di kancah internasional, di dukung sumber daya
+            manusia yang unggul dan berpengalaman di bidang serta mengedepankan
+            teknologi kreatif, inovarif pada setiap jasa dan produk yang
+            berkualitas untuk kepuasan customer.
+          </p>
+        </div>
+      </section>
+      <section class="my-5">
+        <h3>AMIKOM BUSINESS PARK (ABP)</h3>
+        <div
+          class="d-flex justify-content-evenly align-items-center flex-wrap flex-lg-nowrap"
+        >
+          <img
+            src="https://home.amikom.ac.id/media/2021/02/ABP-award-1.png"
+            alt=""
+            class="img-fluid w-25"
+          />
+          <p class="p-2">
+            ABP Inkubator adalah Inkubator dari AMIKOM Foundation. Ini adalah
+            salah satu pembangun ekosistem startup teknologi terbaik di
+            Yogyakarta, Indonesia. Dengan semangat kolaborasi, kami bekerja sama
+            dengan Asosiasi dan komunitas lokal untuk membuat ekosistem startup
+            di Yogyakarta menjadi lebih baik. Buka Channel Youtube ABP Buka
+            Channel ABP Linkedin Buka Channel Instagram ABP Buka Channel
+            Facebook ABP Ikon Alamat ABP
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="template pb-0">
+      <div class="container-lg">
+        <a href="/index.html"
+          ><img
+            src="https://home.amikom.ac.id/media/2020/08/logo-amikom-t.png"
+            class="img-fluid w-25 img-footer mb-4"
+            alt=""
+        /></a>
+        <div
+          class="row row-cols-lg-3 row-cols-md-2 row-cols-1 mx-auto justify-content-lg-between"
+        >
+          <div class="col">
+            <ul class="fw-light text-light">
+              <p>
+                Alamat Kampus : JL .Ring Road Utara,<br />
+                Condong Catur, Sleman, Yogyakarta
+              </p>
+              <li>Telp: (0274) 884201 - 207</li>
+              <li>Fax: (0274) 884208</li>
+              <li>Kodepos: 55283</li>
+
+              <li>
+                Email:
+                <a href="mailto:Amikom@amikom.ac.id">Amikom@amikom.ac.id</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="fw-light text-light">
+              <li><a href="pmb.html">Pendaftaran</a></li>
+              <li><a href="sejarah.html">Profil Amikom</a></li>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="info-kampus.html">Info Kampus</a></li>
+              <li><a href="info-pmb.html#biaya">Biaya</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul class="fw-light text-light list-group">
+              <li><a href="akademik.html">Akademik</a></li>
+              <li><a href="beasiswa.html">Beasiswa</a></li>
+              <li><a href="news.html">Berita</a></li>
+              <li><a href="creativeEko.html">Ekonomi Kreatif</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul
+          class="d-flex justify-content-lg-end gap-4 mt-5 justify-content-center"
+        >
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+                ></path>
+                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                <path
+                  d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/amikomjogja" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                style="fill: #ff7501"
+              >
+                <path
+                  d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text text-center mt-5 mb-0 py-4 fw-light">
+        Copyright ©2022 UNIVERSITAS AMIKOM YOGYAKARTA
+        <br />
+        All Right Reserved
+      </p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
