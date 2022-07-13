@@ -515,6 +515,10 @@ footer ul li{
 @media screen and (max-width: 750px) {
     /* sejarah  */
 
+    .hero h1{
+        font-size: 8vw;
+    }
+
     .responsive .w-75{
         width: 100% !important;
     }
@@ -543,6 +547,11 @@ footer ul li{
     .list-item{
         width: 100%;
     }
+
+    .list-item p{
+        text-align: left;
+    }
+
     .content-list{
         text-align: center;
         flex-direction: column;
