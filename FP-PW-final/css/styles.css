@@ -365,6 +365,10 @@ footer ul li{
     background-image: url('https://i0.wp.com/infoproduk.web.id/wp-content/uploads/2022/01/jurusan-amikom-jogja-biaya-kuliah-amikom-jogja.jpg?resize=640%2C360&ssl=1');
 }
 
+.profile-img::before{
+    background-size: cover;
+    background-image: url('https://i0.wp.com/harga.web.id/wp-content/uploads/kampus-stmik-amikom-1.jpg?fit=680%2C300&ssl=1');
+}
 
 
 /* beasiswa IMG */
@@ -385,6 +389,21 @@ footer ul li{
 
 .akademik a{
     color: var(--bg-color-fore);
+}
+
+
+
+/* team */
+.team{
+    margin-left: 1rem;
+}
+
+.team li{
+    margin: 1rem 0;
+}
+
+.team li::marker{
+    content: "📌";
 }
 
 
